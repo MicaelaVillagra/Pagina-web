@@ -1,0 +1,73 @@
+* {box-sizing: border-box; }
+
+body { font: 12px "Source Sans Pro", sans-serif; counter-reset: titulos;}
+
+#encabezado {width: 100%; height: 200px; background: #666; padding: 10px; margin-bottom: 20px; display: flex; justify-content: flex-start; align-items: center; display: flex;}
+#encabezado div { width: 30%;}
+
+#encabezado #redesSociales { width: 10%; margin-left: auto; align-self: flex-start;}
+
+#redesSociales img { width: 20px; height: 20px;}
+a { text-decoration: none;}
+
+
+main {width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around;}
+
+section {width: 30.33%; border: 1px dotted gray;}
+
+section img {width: 50px; height: 50px;}
+
+section img:hover { opacity: 0.5;}
+
+
+#contactoSection { width: 100%;padding: 10px; background-color: greyz; margin-top: 20px; background-color: grey;}
+
+section p:first-line{ background-color: pink; font-weight: bold;}
+
+nav, nav div { width: 100%; height: 40px;background-color: grey; display: flex; justify-content: center; align-items: center;}
+
+nav div {width: 50%; justify-content: space-around;}
+
+nav a { text-align: center; width: 100px; height: 30px; background-color: black; line-height: 30px; text-transform: uppercase; font-variant: small-caps;}
+
+nav a:link, nav a:visited {background-color: black; color: white;}
+
+nav a:hover {background-color: red; color: blue;}
+
+nav a:active {background-color: gray; color:green;}
+
+label, input {display: block;}
+
+input {width: 100px;}
+
+input:focus {width: 200px;}
+
+button:focus {background-color: grey;}
+
+
+ section h2 {counter-increment: titulos;}
+ h2::before {content: "Servicio" counter(titulos); color: black; text-transform: uppercase;}
+
+
+ label::before {content: attr(for);}
+
+ ul {list-style-type: circle;}
+
+ section:first-child {max-height: 200px;overflow: scroll;}
+
+ textarea {display: block; resize: none;}
+ /*both puede agrandarse tanto horizontal como vertical*/
+ /*horizontal, solo hacia el horizontal*/
+ /*vertical, solo hacia la parte vertical*/
+
+ /*no me funciona */
+ #pie {width: 100%; height: 200px; background: black; padding: 20px; display: flex;}
+
+ #pie a {width: 60px; height: 60px; background-image: url(/imagenes/sprites.png);}
+
+ #pie #footerF {background-position: -60px 0px; }   
+
+ #pie #footerT:hover {background-position: 0px 58px}
+
+ #pie #footerF:hover {background-position: -55px 58px;}
+  
