@@ -63,9 +63,9 @@ button:focus {background-color: grey;}
  /*no me funciona */
  #pie {width: 100%; height: 200px; background: black; padding: 20px; display: flex;}
 
- #pie a {width: 60px; height: 60px; background-image: url(/imagenes/sprites.png);}
+ #pie a {width: 60px; height: 60px; background-image: url(../imagenes/sprites.png);}
 
- #pie #footerF {background-position: -60px 0px; }   
+ #pie #footerF {background-position: -55px 0px; }   
 
  #pie #footerT:hover {background-position: 0px 58px}
 
