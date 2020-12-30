@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+
+#caja{
+    width: 200px;
+    height: 55px;
+    background-color: grey;
+    border-radius: 5px;
+ }
